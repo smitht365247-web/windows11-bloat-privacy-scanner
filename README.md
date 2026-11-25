@@ -25,3 +25,7 @@ Upgrade to the **[Windows 11 Safe Debloat, Privacy & Telemetry Tuner ($19 on Gum
 - **Automatic Registry Rollback Backups** + **1-Click `.reg` Restore Utility**
 - **Protected Core-App Guards** (keeps Microsoft Store, Edge/WebView, Defender, and core Windows intact)
 - **Safe Telemetry & Bloatware Hardening** without breaking Windows updates
+## v1.1 Reliability & Rollback Notes
+- **Space-Safe UAC Elevation:** Elevated menu actions handle folder paths containing spaces cleanly without argument splitting or truncation.
+- **Persistent Review Window (`-NoExit`):** Elevated PowerShell windows stay open with `-NoExit` so you can review every action and confirmation message before closing.
+- **Separate Full `.reg` Snapshots:** Exports separate full registry backup files (`advinfo_backup_*.reg` and `privacy_backup_*.reg`) alongside `backup_manifest_*.txt` inside `Rollback_Backups\` for straightforward rollback.
