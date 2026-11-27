@@ -1,31 +1,33 @@
-# Windows 11 Bloat, Telemetry & Privacy Scanner (Free, Portable)
+# Windows 11 Bloat, Telemetry & Privacy Scanner (Portable)
 
-A lightweight, **100% read-only** Windows 10/11 utility that audits your telemetry services, advertising ID, startup count, and preinstalled bloatware packages, then generates a **Privacy & Lean Posture Score (0–100)**—no Python, Docker, or coding required.
+**Free, 100% offline, zero-install Windows 10/11 PowerShell utility** that audits DiagTrack telemetry, advertising ID, startup clutter, and preinstalled apps in under 10 seconds - 100% read-only with zero system changes.
 
-## What It Audits (Zero System Changes)
-- **Telemetry Services:** Checks `DiagTrack` and `dmwappushservice` status.
-- **Advertising ID:** Checks `HKCU:\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo`.
-- **Startup Commands:** Counts background startup items via `Win32_StartupCommand`.
-- **Preinstalled Bloatware:** Scans for common preinstalled packages (Clipchamp, Disney, Spotify, TikTok, BingNews/Weather, Solitaire, Teams, Xbox).
-- **Timestamped Report:** Saves a clean `win11_privacy_audit_*.txt` report.
+- **Verified Release ZIP (Gumroad `$0+`):** https://smitht365.gumroad.com/l/fydryu
+- **GitHub Releases:** https://github.com/smitht365247-web/windows11-bloat-privacy-scanner/releases
 
 ## Quick Start
-1. Click **Code -> Download ZIP** (or grab the free pre-packaged ZIP on [Gumroad](https://smitht365.gumroad.com/l/fydryu)).
-2. Extract the ZIP folder to your PC (e.g., `C:\Tools\Win11-Bloat-Privacy-Scanner`).
-3. Double-click `RUN_SCANNER.bat`, choose where to save the report (or press **Enter** for default), and review your audit score.
+1. Download the latest verified ZIP from [GitHub Releases](https://github.com/smitht365247-web/windows11-bloat-privacy-scanner/releases) or [Gumroad](https://smitht365.gumroad.com/l/fydryu).
+2. Right-click the `.zip` -> **Properties** -> check **Unblock** -> **Apply / OK**, then extract.
+3. Double-click `RUN_SCANNER.bat` to generate your read-only privacy posture report.
 
-## Windows SmartScreen Unblock Instructions
-Because `.bat` and `.ps1` files downloaded from the internet are unsigned, Windows SmartScreen may show *"Windows protected your PC"* on the first run:
-- Click **More info** -> **Run anyway**, **OR**
-- Right-click the downloaded `.zip` file **before extracting** -> **Properties** -> check **Unblock** -> **Apply / OK**, then extract.
+## Free Scanner vs. Paid Pro Toolkit
+| Capability | Bloat & Privacy Scanner (`$0+` Free) | [Safe Debloat, Privacy & Telemetry Tuner (`$19`)](https://smitht365.gumroad.com/l/cnsts) |
+| :--- | :---: | :---: |
+| Read-only telemetry, Ad-ID & startup posture audit | Yes | Yes |
+| Reversible telemetry & Ad-ID hardening with dual `YES` gates | - | Yes |
+| Automatic `.reg` + service StartMode backups & 1-click rollback | - | Yes |
 
-## Want Safe, Reversible Debloating & Telemetry Tuning?
-Upgrade to the **[Windows 11 Safe Debloat, Privacy & Telemetry Tuner ($19 on Gumroad)](https://smitht365.gumroad.com/l/cnsts)** — portable Windows 11 toolkit with:
-- **System Restore Point Helper** before making any changes
-- **Automatic Registry Rollback Backups** + **1-Click `.reg` Restore Utility**
-- **Protected Core-App Guards** (keeps Microsoft Store, Edge/WebView, Defender, and core Windows intact)
-- **Safe Telemetry & Bloatware Hardening** without breaking Windows updates
-## v1.1 Reliability & Rollback Notes
-- **Space-Safe UAC Elevation:** Elevated menu actions handle folder paths containing spaces cleanly without argument splitting or truncation.
-- **Persistent Review Window (`-NoExit`):** Elevated PowerShell windows stay open with `-NoExit` so you can review every action and confirmation message before closing.
-- **Separate Full `.reg` Snapshots:** Exports separate full registry backup files (`advinfo_backup_*.reg` and `privacy_backup_*.reg`) alongside `backup_manifest_*.txt` inside `Rollback_Backups\` for straightforward rollback.
+## Windows SmartScreen Unblock Note
+Because `.bat` and `.ps1` scripts downloaded from the internet are unsigned, Windows SmartScreen may show *"Windows protected your PC"* on first run:
+- **Option A:** Click **More info** -> **Run anyway**.
+- **Option B:** Right-click the `.zip` before extracting -> **Properties** -> check **Unblock** -> **Apply / OK** -> extract.
+## More Free Windows 11 PowerShell Tools (100% Offline, Zero-Install)
+- **Ollama Hardware & Model Fit Checker** - [GitHub](https://github.com/smitht365247-web/windows11-ollama-hardware-fit-checker) | [Gumroad ($0+)](https://smitht365.gumroad.com/l/rkhkom)
+- **Local AI Storage Auditor** - [GitHub](https://github.com/smitht365247-web/Win11-Local-AI-Storage-Auditor) | [Gumroad ($0+)](https://smitht365.gumroad.com/l/zhagpn)
+- **MCP Config Health Scanner** - [GitHub](https://github.com/smitht365247-web/windows11-mcp-agent-config-scanner) | [Gumroad ($0+)](https://smitht365.gumroad.com/l/ofxozx)
+- **Secret & Hardcoded Path Leak Scanner** - [GitHub](https://github.com/smitht365247-web/Win11-Secret-Path-Leak-Scanner) | [Gumroad ($0+)](https://smitht365.gumroad.com/l/aaymt)
+- **Local Whisper Preflight Checker** - [GitHub](https://github.com/smitht365247-web/windows11-whisper-preflight-checker) | [Gumroad ($0+)](https://smitht365.gumroad.com/l/inttob)
+- **Single-Folder SHA-256 Hash Checker** - [GitHub](https://github.com/smitht365247-web/windows11-sha256-hash-checker) | [Gumroad ($0+)](https://smitht365.gumroad.com/l/olkmxs)
+- **Bloat, Telemetry & Privacy Scanner** - [GitHub](https://github.com/smitht365247-web/windows11-bloat-privacy-scanner) | [Gumroad ($0+)](https://smitht365.gumroad.com/l/fydryu)
+
+Browse all 15 portable Windows 10/11 toolkits & bundles: https://smitht365.gumroad.com
