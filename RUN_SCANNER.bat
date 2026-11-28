@@ -1,6 +1,7 @@
 @echo off
 setlocal DisableDelayedExpansion
-title Windows 11 Bloat, Telemetry & Privacy Scanner (v1.2)
+cd /d "%~dp0"
+title Windows 11 Bloat, Telemetry ^& Privacy Scanner (v1.2)
 
 :START
 cls
